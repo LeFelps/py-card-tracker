@@ -22,7 +22,7 @@ refImg=cv2.imread("carta.png",0)
 refKP,refDesc = sift.detectAndCompute(refImg,None)
 
 # configura a captura de imagem da webcam
-vc=cv2.VideoCapture("q1.mp4")
+vc=cv2.VideoCapture("cards.mp4")
 
 # se a webcam abrir pego um frame
 
