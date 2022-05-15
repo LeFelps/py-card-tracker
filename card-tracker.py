@@ -75,6 +75,7 @@ while True:
         #  [0,h-1]      [w-1,h-1]
         #
         refBorda=np.float32([[[0,0],[0,h-1],[w-1,h-1],[w-1,0]]])
+        cv2.putText(frame, 'CARTA DETECTADA', (50, 50), cv2.FONT_HERSHEY_SIMPLEX,1,(200,50,0),2,cv2.LINE_AA)
         # Usa refBorda e a matrix de homografia H para calcular a matrix transformação de pespectiva
         frameBorda=cv2.perspectiveTransform(refBorda,H)
         # polylines desenha poligonos ou qualquer imagem, na cor verde e largura do traço igual a 5.
